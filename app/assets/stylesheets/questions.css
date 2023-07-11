@@ -1,0 +1,215 @@
+/******************************************** 
+ リセット用
+*********************************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.header-main{
+  display: flex;
+  height: 65px;
+  background: #1C3667;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-title {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 23px;
+ font-weight: 100;
+ color: #FFFFFF;
+ letter-spacing: 1.8px;
+}
+
+.header-button {
+  width: 80px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.header-button a {
+  line-height: 32px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #3a3736;
+}
+
+.main {
+  height: calc(100vh - 65px);
+
+  background-color: #F2F2F3;
+}
+
+.index-main {
+  width: 100vw;
+  height: calc(100vh - 65px);
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F3;
+}
+
+.comment-entire {
+  width: 700px;
+  padding-top: 90px;
+}
+
+.post-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+}
+
+.comment {
+ width: 70px;
+ height: 100px;
+ background-color: #1C3667;
+ border-radius: 5px 0 0 5px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 20px;
+}
+
+.comment-number {
+  height: 38px;
+  font-size: 26px;
+  color: #FFFFFF;
+
+}
+
+.comment-title {
+  height: 16px;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+
+.question{
+  width: calc(700px - 70px);
+  height: 100px;
+  background-color: #FFFFFF;
+  padding: 10px 15px;
+}
+
+.question-top {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.question-top a {
+  text-decoration: none;
+}
+
+.title-name {
+  width: 500px;
+ font-size: 14px;
+}
+
+.questioner{
+ font-size: 12px;
+}
+
+.question-bottom {
+ font-size: 12px;
+}
+
+#ここから質問ページの設定
+
+.full {
+  width: 100vh;
+  background-color: #F2F2F3;
+}
+
+.ask-entire {
+  width: 700px;
+  margin: 0 auto;
+  padding: 80px 0;
+  
+}
+
+.form-coloring{
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.head-part {
+  width: 700px;
+  height: 45px;
+  background-color: #1C3667;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 40px;
+}
+
+.main-part {
+  width: 700px;
+  height: 346px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.main-detail {
+  width: 520px;
+}
+
+
+.main-title {
+ height: 30px;
+ margin-bottom: 15px;
+}
+
+.main-title input {
+ height: 100%;
+ width: 100%;
+}
+
+.main-question {
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.main-question textarea {
+  height: 100%;
+  width: 100%;
+}
+
+.main-name {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.main-name input {
+  height: 100%;
+  width: 100%;
+}
+
+.main-button {
+  height: 36px;
+  margin-bottom: 40px;
+}
+
+.main-button input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #1C3667;
+}
