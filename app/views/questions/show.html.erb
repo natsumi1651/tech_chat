@@ -1,15 +1,24 @@
-<div class ="show-main">
-                  <div class="title-name-show">
-                     タイトル:<%= @question.title %>
-                  </div>
-                  </div>
-                  <div class="question-bottom-show">
-                     質問内容:<%= @question.content %>
-                  </div>
-                  <div class="question-top">
-                   <div class="questioner-show">
-                       投稿者名:<%= @question.name %>
-                   </div>
-                  </div>
-              
-</div>
+   <div class="title-name-show">
+      タイトル:<%= @question.title %>
+   </div>
+   </div>
+   <div class="question-bottom-show">
+      質問内容:<%= @question.content %>
+   </div>
+   <div class="question-top">
+   <div class="questioner-show">
+      投稿者名:<%= @question.name %>
+   </div>
+   </div><br>
+
+   <%= form_with(model: [@question, @answer], local: true) do |form| %>
+    <%= form.text_area :text, placeholder: "回答する", rows: "2" %><br>
+    <%= form.text_field :string, placeholder: "ユーザー名" %><br>
+    <%= form.submit "POST" %>   
+   <% end %>
+
+
+ <% @answers.each do |answer| %><br>
+  回答:<%= answer.answercontent %><br>
+  投稿者:<%= answer.answername %><br>
+ <% end %>
