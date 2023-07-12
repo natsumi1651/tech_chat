@@ -52,7 +52,6 @@ div {
 
 .main {
   height: calc(100vh - 65px);
-
   background-color: #F2F2F3;
 }
 
@@ -214,3 +213,5 @@ div {
   color: #FFFFFF;
   background-color: #1C3667;
 }
+
+
